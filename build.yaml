@@ -1,0 +1,10 @@
+ include:
+ - board: seeeduino_xiao_ble
+   shield: orbit_dongle
+   snippet: studio-rpc-usb-uart
+ - board: seeeduino_xiao_ble
+   shield: orbit_left
+ - board: seeeduino_xiao_ble
+   shield: orbit_right
+ - board: seeeduino_xiao_ble
+   shield: settings_reset
