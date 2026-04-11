@@ -1,0 +1,16 @@
+if SHIELD_ORBIT_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Rog Orbit Pro"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ORBIT_DONGLE || SHIELD_ORBIT_LEFT || SHIELD_ORBIT_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,9 @@
+file_format: "1"
+id: orbit
+name: orbit
+type: shield
+url: 
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - pointer
