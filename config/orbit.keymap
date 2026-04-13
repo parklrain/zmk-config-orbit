@@ -50,10 +50,10 @@
             bindings = <&kp GRAVE>;
         };
 
-        combo_bspc {
+        combo_return {
             timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&kp BSPC>;
+            key-positions = <28 29>;
+            bindings = <&kp ENTER>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -280,16 +280,16 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T                &kp Y        &kp U  &kp I        &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G                &kp H        &kp J  &kp K        &kp L    &kp SEMICOLON
-&kp Z  &kp X  &kp C  &kp V  &kp B                &kp N        &kp M  &lt 3 COMMA  &kp DOT  &kp FSLH
-                            &lt 2 SPACE          &lt 1 ENTER
+&kp Q  &kp W  &kp E  &kp R  &kp T                &kp Y       &kp U  &kp I        &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F  &kp G                &kp H       &kp J  &kp K        &kp L    &kp SEMICOLON
+&kp Z  &kp X  &kp C  &kp V  &kp B                &kp N       &kp M  &lt 3 COMMA  &kp DOT  &kp FSLH
+                            &lt 2 SPACE          &lt 1 BSPC
             >;
         };
 
         number_layer {
             bindings = <
-&kp SLASH  &kp N7  &kp N8  &kp N9  &kp ASTRK          &kp DEL    &kp BSPC  &kp PRINTSCREEN  &kp HOME   &kp END
+&kp SLASH  &kp N7  &kp N8  &kp N9  &kp ASTRK          &kp HOME   &kp END   &kp PRINTSCREEN  &kp EQUAL  &kp DEL
 &kp MINUS  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP           &kp RIGHT  &kp SQT
 &kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT            &kp PG_DN  &kp LBKT  &kp DOWN         &kp RBKT   &kp BSLH
                                    &kp N0             &trans
