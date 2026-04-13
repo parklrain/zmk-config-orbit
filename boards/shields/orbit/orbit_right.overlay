@@ -59,5 +59,4 @@
 
 &trackball {
     device = <&trackball_right>;
-    cpi = <600>;
 };
