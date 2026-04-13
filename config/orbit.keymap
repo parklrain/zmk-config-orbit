@@ -12,17 +12,8 @@
 &lt { quick-tap-ms = <150>; };
 
 / {
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        require-prior-idle-ms = <300>;
-        excluded-positions = <26 27 28 29>;
-    };
 
     trackball_right { cpi = <400>; };
-
-    trackball_listener {
-        input-processors = <&zip_temp_layer 1 5000>;
 
         scroller {
             layers = <3>;
