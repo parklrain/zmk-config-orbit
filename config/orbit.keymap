@@ -289,8 +289,8 @@
 
         number_layer {
             bindings = <
-&kp SLASH  &kp N7  &kp N8  &kp N9  &kp ASTRK          &kp HOME   &kp END   &kp PRINTSCREEN  &kp EQUAL  &kp DEL
-&kp MINUS  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP           &kp RIGHT  &kp SQT
+&kp SLASH  &kp N7  &kp N8  &kp N9  &kp ASTRK          &kp DEL    &kp BSPC  &kp PRINTSCREEN  &kp HOME   &kp END
+&kp MINUS  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP           &kp RIGHT  &kp EQUAL
 &kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT            &kp PG_DN  &kp LBKT  &kp DOWN         &kp RBKT   &kp BSLH
                                    &kp N0             &trans
             >;
@@ -298,10 +298,10 @@
 
         function_layer {
             bindings = <
-&trans  &trans          &trans          &trans           &trans          &trans        &kp F7  &kp F8  &kp F9  &kp F12
-&trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans          &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans          &msc SCRL_DOWN  &trans           &trans          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
-                                                         &trans          &trans
+&kp TAB  &kp GRAVE       &kp SQT         &kp BSPC         &kp DEL            &trans        &kp F7  &kp F8  &kp F9  &kp F12
+&trans   &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &kp ENTER          &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
+&trans   &trans          &msc SCRL_DOWN  &trans           &trans             &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
+                                                          &trans             &trans
             >;
         };
 
