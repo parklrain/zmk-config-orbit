@@ -12,7 +12,6 @@
 &lt { quick-tap-ms = <150>; };
 
 / {
-
     trackball_right { cpi = <400>; };
 
     trackball_listener {
@@ -66,18 +65,22 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_enter {
+        combo_rctrl {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp ENTER>;
+            bindings = <&kp LCTRL>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
         combo_lang {
             timeout-ms = <50>;
-            key-positions = <27 28>;
+            key-positions = <16 18>;
             bindings = <&td_lang>;
+            require-prior-idle-ms = <100>;
         };
 
         combo_grave {
@@ -88,7 +91,7 @@
 
         combo_cut {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <21 23>;
             bindings = <&kp LC(X)>;
         };
 
@@ -104,15 +107,17 @@
             bindings = <&kp LC(V)>;
         };
 
-        combo_sqt {
+        combo_ralt {
             timeout-ms = <50>;
             key-positions = <18 19>;
-            bindings = <&kp SQT>;
+            bindings = <&kp LALT>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
         combo_lbkt {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <3 2>;
             bindings = <&kp LEFT_BRACKET>;
         };
 
@@ -122,64 +127,159 @@
             bindings = <&kp RIGHT_BRACKET>;
         };
 
-        combo_m {
+        combo_lclk {
             timeout-ms = <50>;
             key-positions = <26 27>;
-            bindings = <&kp M>;
+            bindings = <&mkp LCLK>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_q {
+        combo_rshft {
             timeout-ms = <50>;
-            key-positions = <0 30>;
-            bindings = <&kp LS(Q)>;
+            key-positions = <16 17>;
+            bindings = <&kp RSHFT>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_w {
+        combo_rgui {
             timeout-ms = <50>;
-            key-positions = <1 30>;
-            bindings = <&kp LS(W)>;
+            key-positions = <16 15>;
+            bindings = <&kp RWIN>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_e {
+        combo_lgui {
             timeout-ms = <50>;
-            key-positions = <2 30>;
-            bindings = <&kp LS(E)>;
+            key-positions = <14 13>;
+            bindings = <&kp LWIN>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_r {
+        combo_lshft {
             timeout-ms = <50>;
-            key-positions = <3 30>;
-            bindings = <&kp LS(R)>;
+            key-positions = <13 12>;
+            bindings = <&kp LSHFT>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_t {
+        combo_lctrl {
             timeout-ms = <50>;
-            key-positions = <4 30>;
-            bindings = <&kp LS(T)>;
+            key-positions = <12 11>;
+            bindings = <&kp LCTRL>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_o {
+        combo_lalt {
             timeout-ms = <50>;
-            key-positions = <7 8>;
-            bindings = <&kp LS(O)>;
+            key-positions = <11 10>;
+            bindings = <&kp LALT>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp BSPC>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_mouse4 {
+        combo_prev {
             timeout-ms = <50>;
             key-positions = <26 16>;
             bindings = <&mkp MB4>;
+            require-prior-idle-ms = <100>;
         };
 
-        combo_mouse5 {
+        combo_next {
             timeout-ms = <50>;
             key-positions = <17 27>;
             bindings = <&mkp MB5>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_lalt_lctrl {
+            bindings = <&kp LC(LALT)>;
+            key-positions = <11 10 12>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_lctrl_lshft {
+            bindings = <&kp LC(LSHFT)>;
+            key-positions = <11 12 13>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_lalt_lshft {
+            bindings = <&kp LA(LSHFT)>;
+            key-positions = <12 13 10>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_lctrl_lwin {
+            bindings = <&kp LC(LWIN)>;
+            key-positions = <12 13 10 11>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_ralt_rctrl {
+            bindings = <&kp LC(LALT)>;
+            key-positions = <17 18 19>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_rctrl_rshft {
+            bindings = <&kp LC(LSHFT)>;
+            key-positions = <16 17 18>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_ralt_rshft {
+            bindings = <&kp LA(LSHFT)>;
+            key-positions = <16 17 19>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_rwin_rctrl {
+            bindings = <&kp LC(LWIN)>;
+            key-positions = <16 17 18 19>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_hanja {
+            bindings = <&kp RCTRL>;
+            key-positions = <17 19>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <21 20>;
+            timeout-ms = <50>;
         };
     };
 
@@ -188,36 +288,36 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W       &kp E        &kp R        &kp T                &kp Y       &kp U        &kp I        &kp O       &kp P
-&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G                &kp H       &hm LSHFT J  &hm LCTRL K  &hm LALT L  &hm LGUI SEMI
-&kp Z       &kp X       &kp C        &kp V        &kp B                &kp N       &kp M        &kp COMMA    &lt 3 DOT   &kp FSLH
-                                                  &lt 2 SPACE          &lt 3 BSPC
-            >;
-        };
-
-        mouse_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &mkp LCLK  &mkp RCLK  &SCROLL    &mkp MCLK
-                                &trans          &trans
+&kp Q  &kp W  &kp E  &kp R  &kp T                &kp Y       &kp U  &kp I      &kp O      &kp P
+&kp A  &kp S  &kp D  &kp F  &kp G                &kp H       &kp J  &kp K      &kp L      &kp SEMICOLON
+&kp Z  &kp X  &kp C  &kp V  &kp B                &kp N       &kp M  &kp COMMA  &lt 3 DOT  &kp FSLH
+                            &lt 2 SPACE          &lt 1 BSPC
             >;
         };
 
         number_layer {
             bindings = <
-&kp HOME  &kp END        &kp PRINTSCREEN  &kp BSPC         &kp DEL            &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp BSPC
-&kp TAB   &hm LALT LEFT  &hm LCTRL UP     &hm LSHFT RIGHT  &kp PG_UP          &kp MINUS  &kp N4  &kp N5  &kp N6  &kp PLUS
-&kp INS   &kp COMMA      &kp DOWN         &kp ENTER        &kp PG_DN          &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT
-                                                           &trans             &trans
+&kp SLASH  &kp N7  &kp N8  &kp N9  &kp ASTRK          &kp HOME   &kp END   &kp PRINTSCREEN  &kp BSPC   &kp DEL
+&kp MINUS  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP           &kp RIGHT  &kp SQT
+&kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT            &kp PG_DN  &kp LBKT  &kp DOWN         &kp RBKT   &kp BSLH
+                                   &kp N0             &trans
             >;
         };
 
         function_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans        &kp F7  &kp F8  &kp F9  &kp F12
-&trans  &trans  &trans  &trans  &trans          &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
+&trans  &trans          &trans          &trans           &trans          &trans        &kp F7  &kp F8  &kp F9  &kp F12
+&trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans          &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans          &msc SCRL_DOWN  &trans           &trans          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
+                                                         &trans          &trans
+            >;
+        };
+
+        scroll_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
                                 &trans          &trans
             >;
         };
