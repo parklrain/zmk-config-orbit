@@ -19,7 +19,7 @@
         excluded-positions = <26 27 28 29>;
     };
 
-    trackball_right { cpi = <1000>; };
+    trackball_right { cpi = <600>; };
 
     trackball_listener {
         input-processors = <&zip_temp_layer 1 5000>;
