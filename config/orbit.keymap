@@ -9,6 +9,8 @@
 #define FN lt 3
 #define SCROLL mo 3
 
+&lt { quick-tap-ms = <150>; };
+
 / {
     zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
@@ -194,10 +196,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W       &kp E        &kp R        &kp T               &kp Y      &kp U        &kp I        &kp O       &kp P
-&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G               &kp H  &hm LSHFT J  &hm LCTRL K  &hm LALT L  &hm LGUI SEMI
-&kp Z       &kp X       &kp C        &kp V        &kp B               &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                                                  &NUM SPACE          &FN BSPC
+&kp Q       &kp W       &kp E        &kp R        &kp T                &kp Y       &kp U        &kp I        &kp O       &kp P
+&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G                &kp H       &hm LSHFT J  &hm LCTRL K  &hm LALT L  &hm LGUI SEMI
+&kp Z       &kp X       &kp C        &kp V        &kp B                &kp N       &kp M        &kp COMMA    &kp DOT     &kp FSLH
+                                                  &lt 2 SPACE          &lt 3 BSPC
             >;
         };
 
