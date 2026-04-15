@@ -289,8 +289,8 @@
 
         number_layer {
             bindings = <
-&kp SLASH  &kp N7  &kp N8  &kp N9  &kp ASTRK          &kp DEL    &kp BSPC  &kp PRINTSCREEN  &kp HOME   &kp END
-&kp MINUS  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP           &kp RIGHT  &kp EQUAL
+&kp SLASH  &kp N7  &kp N8  &kp N9  &kp EQUAL          &kp DEL    &kp BSPC  &kp PRINTSCREEN  &kp HOME   &kp END
+&kp MINUS  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP           &kp RIGHT  &kp ENTER
 &kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT            &kp PG_DN  &kp LBKT  &kp DOWN         &kp RBKT   &kp BSLH
                                    &kp N0             &trans
             >;
