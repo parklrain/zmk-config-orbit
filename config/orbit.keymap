@@ -52,7 +52,7 @@
 
         combo_return {
             timeout-ms = <50>;
-            key-positions = <28 18>;
+            key-positions = <19 29>;
             bindings = <&kp ENTER>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -60,14 +60,14 @@
 
         combo_lang {
             timeout-ms = <50>;
-            key-positions = <15 25>;
+            key-positions = <16 18>;
             bindings = <&td_lang>;
             require-prior-idle-ms = <100>;
         };
 
         combo_hanja {
             bindings = <&kp RCTRL>;
-            key-positions = <5 15>;
+            key-positions = <17 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
         };
@@ -262,21 +262,21 @@
 
         combo_prev {
             timeout-ms = <50>;
-            key-positions = <16 6>;
+            key-positions = <25 15>;
             bindings = <&mkp MB4>;
             require-prior-idle-ms = <100>;
         };
 
         combo_next {
             timeout-ms = <50>;
-            key-positions = <17 7>;
+            key-positions = <5 15>;
             bindings = <&mkp MB5>;
             require-prior-idle-ms = <100>;
         };
 
         combo_bspc {
             bindings = <&kp BSPC>;
-            key-positions = <19 29>;
+            key-positions = <19 9>;
             timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <100>;
