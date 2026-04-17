@@ -269,7 +269,7 @@
 
         combo_next {
             timeout-ms = <50>;
-            key-positions = <5 15>;
+            key-positions = <18 28>;
             bindings = <&mkp MB5>;
             require-prior-idle-ms = <100>;
         };
