@@ -306,10 +306,10 @@
 
         function_layer {
             bindings = <
-&kp TAB   &kp GRAVE       &kp SQT         &kp BSPC         &kp DEL            &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12
-&kp CAPS  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &kp ENTER          &kp C_VOL_UP     &kp F4  &kp F5  &kp F6  &kp F11
-&trans    &trans          &msc SCRL_DOWN  &trans           &trans             &kp C_VOL_DN     &kp F1  &kp F2  &kp F3  &kp F10
-                                                           &trans             &trans
+&kp TAB   &kp GRAVE       &kp SQT         &kp BSPC         &kp DEL                  &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
+&kp CAPS  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &kp ENTER                &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
+&trans    &trans          &msc SCRL_DOWN  &trans           &kp PRINTSCREEN          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
+                                                           &trans                   &trans
             >;
         };
 
