@@ -45,6 +45,15 @@
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        st_shft: sticky_shift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_SHIFT";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <200>;
+            quick-release;
+        };
     };
 };
 
@@ -102,7 +111,7 @@
         combo_rshft {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&kp RSHFT>;
+            bindings = <&st_shft RSHFT>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -134,7 +143,7 @@
         combo_lshft {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&kp LSHFT>;
+            bindings = <&st_shft LSHFT>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -312,10 +321,10 @@
 
         number_layer {
             bindings = <
-&kp SLASH  &kp N7  &kp N8  &kp N9  &kp MINUS          &kp HOME   &kp END   &kp EQUAL  &kp BSPC   &kp DEL
+&kp SLASH  &kp N7  &kp N8  &kp N9  &kp N0             &kp HOME   &kp END   &kp EQUAL  &kp BSPC   &kp DEL
 &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP     &kp RIGHT  &kp ENTER
 &kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT            &kp PG_DN  &kp LBKT  &kp DOWN   &kp RBKT   &kp BSLH
-                                   &kp N0             &trans
+                                   &kp MINUS          &trans
             >;
         };
 
