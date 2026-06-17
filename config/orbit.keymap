@@ -31,7 +31,7 @@
         td_lang: tap_dance_lang {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             bindings = <&kp RALT>, <&kp CAPS>;
         };
     };
