@@ -99,13 +99,13 @@
         combo_lbkt {
             timeout-ms = <50>;
             key-positions = <2 3>;
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LPAR>;
         };
 
         combo_rbkt {
             timeout-ms = <50>;
             key-positions = <6 7>;
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RPAR>;
         };
 
         combo_rshft {
@@ -321,10 +321,10 @@
 
         number_layer {
             bindings = <
-&kp SLASH  &kp N7  &kp N8  &kp N9  &kp N0             &kp HOME   &kp END   &kp EQUAL  &kp BSPC   &kp DEL
+&kp TAB    &kp N7  &kp N8  &kp N9  &kp MINUS          &kp HOME   &kp END   &kp EQUAL  &kp BSPC   &kp DEL
 &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP     &kp RIGHT  &kp ENTER
-&kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT            &kp PG_DN  &kp LBKT  &kp DOWN   &kp RBKT   &kp BSLH
-                                   &kp MINUS          &trans
+&kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT            &kp PG_DN  &kp LBKT  &kp DOWN   &kp RBKT   &kp SLASH
+                                   &kp N0             &trans
             >;
         };
 
