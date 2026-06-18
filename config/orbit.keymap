@@ -210,19 +210,19 @@
 
         number_layer {
             bindings = <
-&kp TAB    &kp N7  &kp N8  &kp N9  &kp MINUS          &kp HOME   &kp END   &kp EQUAL  &kp BSPC   &kp DEL
-&kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp PG_UP  &kp LEFT  &kp UP     &kp RIGHT  &kp ENTER
-&kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT            &kp PG_DN  &kp LBKT  &kp DOWN   &kp RBKT   &kp SLASH
-                                   &kp N0             &trans
+&kp TAB          &kp N7        &kp N8         &kp N9         &kp MINUS          &kp HOME   &kp END          &kp EQUAL      &kp BSPC         &kp DEL
+&hml LWIN ASTRK  &hml LALT N4  &hml LSHFT N5  &hml LCTRL N6  &kp PLUS           &kp PG_UP  &hmr LCTRL LEFT  &hmr RSHFT UP  &hmr LALT RIGHT  &hmr RWIN SQT
+&kp COMMA        &kp N1        &kp N2         &kp N3         &kp DOT            &kp PG_DN  &kp LBKT         &kp DOWN       &kp RBKT         &kp SLASH
+                                                             &kp N0             &trans
             >;
         };
 
         function_layer {
             bindings = <
-&kp TAB    &kp GRAVE       &kp SQT         &kp BSPC         &kp DEL                  &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
-&td_lang   &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &kp ENTER                &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
-&kp RCTRL  &trans          &msc SCRL_DOWN  &trans           &kp PRINTSCREEN          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
-                                                            &trans                   &trans
+&td_lang   &kp GRAVE  &kp INS         &kp BSPC         &kp DEL                 &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
+&trans     &trans     &trans          &trans           &msc SCRL_UP            &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
+&kp RCTRL  &trans     &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
+                                                       &trans                  &trans
             >;
         };
 
