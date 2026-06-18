@@ -11,6 +11,9 @@
     tapping-term-ms = <250>;
 };
 
+&caps_word {
+};
+
 / {
     trackball_right { cpi = <800>; };
 
@@ -179,6 +182,12 @@
             timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <100>;
+        };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <16 17>;
+            layers = <0>;
         };
     };
 
