@@ -187,6 +187,18 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <3 4>;
+            timeout-ms = <50>;
+        };
+
+        combo_under {
+            bindings = <&kp UNDER>;
+            key-positions = <5 6>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
@@ -212,10 +224,10 @@
 
         function_layer {
             bindings = <
-&td_caps        &kp BSLH         &kp INS         &kp BSPC          &kp DEL                 &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
-&hml LALT RALT  &trans           &trans          &hml LCTRL UNDER  &msc SCRL_UP            &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
-&kp RCTRL       &kp PRINTSCREEN  &msc SCRL_LEFT  &msc SCRL_RIGHT   &msc SCRL_DOWN          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
-                                                                   &trans                  &trans
+&td_caps        &kp BSLH         &kp INS         &kp BSPC         &kp DEL                 &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
+&hml LALT RALT  &trans           &trans          &trans           &msc SCRL_UP            &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
+&kp RCTRL       &kp PRINTSCREEN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
+                                                                  &trans                  &trans
             >;
         };
 
