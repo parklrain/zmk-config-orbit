@@ -99,20 +99,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_lang {
-            timeout-ms = <50>;
-            key-positions = <16 18>;
-            bindings = <&td_lang>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_hanja {
-            bindings = <&kp RCTRL>;
-            key-positions = <17 19>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
         combo_lbkt {
             timeout-ms = <50>;
             key-positions = <2 3>;
