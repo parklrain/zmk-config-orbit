@@ -11,7 +11,7 @@
     tapping-term-ms = <250>;
 };
 
-&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE RSHFT>; };
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE>; };
 
 / {
     trackball_right { cpi = <800>; };
