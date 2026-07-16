@@ -11,11 +11,6 @@
     tapping-term-ms = <250>;
 };
 
-&caps_word {
-    continue-list = <UNDERSCORE BACKSPACE DELETE>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-};
-
 / {
     trackball_right { cpi = <800>; };
 
@@ -56,15 +51,6 @@
             hold-trigger-key-positions = <0 1 2 3 4 14 13 12 11 10 20 21 22 23 24 30 31>;
         };
 
-        st_shft: sticky_shift {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_SHIFT";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            release-after-ms = <200>;
-            quick-release;
-        };
-
         hml: homerow_left_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LEFT_MODS";
@@ -82,25 +68,25 @@
         magic_shift_tap: magic_shift_tap {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sk_shift>, <&caps_word>; // 일반 탭 시 Sticky-shift / Shift가 켜져 있으면 Caps-word
-            mods = <(MOD_LSFT)>;                    // 감지할 모디파이어 (왼쪽 Shift)
+            bindings = <&sk_shift>, <&caps_word>;
+            mods = <(MOD_LSFT)>;
         };
 
         magic_shift: magic_shift {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;                   // 인자 2개 수신 (<Hold_Key> <Tap_Key>)
-            bindings = <&kp>, <&magic_shift_tap>;  // Hold 시 kp 작동 / Tap 시 morph 작동
-            flavor = "balanced";                    // 홀드와 탭을 자연스럽게 전환
-            tapping-term-ms = <200>;                // 홀드 판정 시간
-            quick-tap-ms = <150>;                   // 연타 시 대기시간을 줄여줌
+            #binding-cells = <2>;
+            bindings = <&kp>, <&magic_shift_tap>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
         };
 
         sk_shift: sk_shift {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <0>;
             bindings = <&kp>;
-            release-after-ms = <1000>;              // 1초 동안 다른 입력 없으면 해제
-            key-positions = <0>;                    // 다른 키 누르면 즉시 해제
+            release-after-ms = <1000>;
+            key-positions = <0>;
         };
 
     };
