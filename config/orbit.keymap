@@ -32,7 +32,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&caps_word>, <&kp CAPS>;
+            bindings = <&kp RALT>, <&kp CAPS>;
 
             label = "TAP_DANCE_CAPS";
         };
@@ -70,7 +70,7 @@
             flavor = "balanced";
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 9 28 18 15 16 17 25 31 26 27 19 29>;
+            hold-trigger-key-positions = <5 6 7 8 9 28 18 15 16 17 25 31 26 27 19 29 30>;
         };
 
         magic_shift_tap: magic_shift_tap {
@@ -238,10 +238,10 @@
 
         function_layer {
             bindings = <
-&td_caps        &kp BSLH         &kp INS         &kp BSPC         &kp DEL                 &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
-&hml LALT RALT  &trans           &trans          &trans           &msc SCRL_UP            &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
-&kp RCTRL       &kp PRINTSCREEN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
-                                                                  &trans                  &trans
+&td_caps   &kp BSLH         &kp INS         &kp BSPC         &kp DEL                 &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
+&trans     &trans           &trans          &trans           &msc SCRL_UP            &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
+&kp RCTRL  &kp PRINTSCREEN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN          &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
+                                                             &trans                  &trans
             >;
         };
 
